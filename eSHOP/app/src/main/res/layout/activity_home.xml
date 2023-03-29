@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawerFormation"
+    android:layout_gravity="center_vertical"
+    tools:context=".Home">
+
+
+   <RelativeLayout
+       android:id="@+id/toolBarFormation"
+       android:layout_width="match_parent"
+       android:layout_height="50dp">
+       <androidx.appcompat.widget.Toolbar
+           android:id="@+id/toolBar"
+           android:layout_width="match_parent"
+           android:layout_height="45dp"
+           app:titleTextColor="#fff"
+           android:elevation="5dp"
+           android:background="#FF00FF"
+           android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+           app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+   </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/topFormation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:padding="5dp">
+
+
+        <TextView
+            android:id="@+id/common"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="serif"
+            android:text="Welcome To"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@id/common"
+            android:fontFamily="serif"
+            android:text="eSHOP"
+            android:textColor="#000"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/content2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/common"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="serif"
+            android:text="Purchase ITEM"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/homeLogo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/content"
+            android:src="@drawable/shoppingbagtwo" />
+
+        <TextView
+            android:id="@+id/orderDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ordered Details"
+            android:layout_marginTop="40dp"
+            android:textColor="#1976D2"
+            android:layout_toRightOf="@id/homeLogo"
+            android:textStyle="bold|italic" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/galleryFormation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:padding="10dp">
+
+
+
+        <TextView
+            android:paddingStart="10dp"
+            android:text="Here we have shared our products."
+            android:layout_width="wrap_content"
+            android:textSize="16dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/contentGallery"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/defaultshopback"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/contentGallery"
+            android:layout_centerHorizontal="true"/>
+
+
+        <Gallery
+            android:id="@+id/languagesGallery"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:animationDuration="2000"
+            android:layout_marginTop="20dp"
+            android:padding="5dp"
+            android:spacing="5dp"
+            android:layout_below="@id/imageView"
+            android:unselectedAlpha="1"/>
+
+        <TextView
+            android:text="Are you interested in purchasing the product \n
+                        click below....."
+            android:layout_width="wrap_content"
+            android:textSize="16dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/languagesGallery"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/contentProduct"/>
+
+        <Button
+            android:id="@+id/chooseProduct"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@id/contentProduct"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#CEE6A331"
+            android:text="get more products to \n purchase here"
+            app:icon="@drawable/iconsshoppincart"
+            app:iconPadding="10dp" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relativeBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="660dp"
+        android:layout_below="@id/galleryFormation">
+
+        <LinearLayout
+            android:id="@+id/bottomFormation"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:background="#FF00FF"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="From"
+                android:textColor="#fff"
+                android:textSize="16dp" />
+
+            <LinearLayout
+                android:id="@+id/logoFormation"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:text="App Dev @ 2023"
+                    android:textColor="#fff"
+                    android:textSize="16dp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/navigation"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/navigation_item"
+        />
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
